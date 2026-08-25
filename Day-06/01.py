@@ -3,7 +3,6 @@
 def sum():
 
     try:
-
         n = int(input("ENTER THE NUMBER HERE.: "))
 
         sum = 0
@@ -18,3 +17,4 @@ def sum():
 
 if __name__ == "__main__":
     sum()        
+
