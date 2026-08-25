@@ -16,5 +16,4 @@ def sum():
         print("please enter the valid number.")
 
 if __name__ == "__main__":
-    sum()        
-
+    sum()
