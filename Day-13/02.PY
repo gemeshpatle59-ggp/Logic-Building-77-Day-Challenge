@@ -3,20 +3,21 @@
 num = 76438
 
 def two_distinct(num):
-    digit = [0,0]
+    digit = [-1, -1]   # [largest, second_largest]
 
     while num > 0:
         last_digit = num % 10
-        if digit[0] < last_digit:
-            # digit[1] = digit[0]
+
+        if last_digit > digit[0]:
+            digit[1] = digit[0]
             digit[0] = last_digit
 
-        else:
-            digit[1] = last_digit    
+        elif last_digit > digit[1] and last_digit != digit[0]:
+            digit[1] = last_digit
 
-        num = num // 10    
-
-            
+        num = num // 10
 
     return digit
-print(two_distinct(num))        
+
+
+print(two_distinct(num))
