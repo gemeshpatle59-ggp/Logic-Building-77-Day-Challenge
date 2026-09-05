@@ -21,5 +21,5 @@ def armstrong_number():
     except ValueError:
         print("Please enter the valid integer .")
 
-print(armstrong_number())                   
+(armstrong_number())                   
 
