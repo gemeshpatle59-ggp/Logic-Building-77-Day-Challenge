@@ -1,0 +1,1 @@
+# Convert a binary number represented as digits into decimal and validate the input
