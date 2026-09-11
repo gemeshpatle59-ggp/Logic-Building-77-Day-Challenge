@@ -1,7 +1,7 @@
 #  Print a hollow square.
 
 
-def diamond():
+def hollowsquare():
     try:
         n = int(input("ENTER YOUR LENGTH ONLY ODD NUMBER HERE.: "))
 
@@ -17,4 +17,4 @@ def diamond():
     
 
 if __name__ == "__main__":
-    diamond()              
+    hollowsquare()              
