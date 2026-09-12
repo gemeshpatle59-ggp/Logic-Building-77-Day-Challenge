@@ -1,9 +1,6 @@
 #  Print a hollow rectangle
 
-#  Print a hollow square.
-
-
-def hallowtriangle():
+def hollowrectangle():
     try:
         n = int(input("ENTER YOUR LENGTH ONLY ODD NUMBER HERE.: "))
 
@@ -19,4 +16,4 @@ def hallowtriangle():
     
 
 if __name__ == "__main__":
-    hallowtriangle()              
+    hollowrectangle()              
