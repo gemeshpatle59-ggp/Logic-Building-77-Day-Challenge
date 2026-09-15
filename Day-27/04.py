@@ -9,6 +9,6 @@ def count_digit(n):
         count += 1
         num = num // 10
 
-    return ("Total digit in number is", count)
+    return ("Total digit in number is", count )
 
 print(count_digit(18761287))
