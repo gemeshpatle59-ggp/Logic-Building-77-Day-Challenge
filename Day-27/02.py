@@ -1,0 +1,10 @@
+#  Write a function to check even/odd.
+
+
+def even_odd(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+print(even_odd(7))
