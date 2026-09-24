@@ -16,6 +16,9 @@ def find_first_non_reapeating_character(chars):
         if hash_map[value] == 0:
             return value
 
+    else:
+        return "there is no non repeating character"
+
 print(find_first_non_reapeating_character("aabbayabyttsarstareeplkmqwplkmqwkkllz"))
 
         
