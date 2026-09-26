@@ -16,6 +16,7 @@ def shortest_sen(sen):
         else:
             shortest_sen1 += i
 
+
     if shortest_sen2 == "" or len(shortest_sen1) < len(shortest_sen2):
         shortest_sen2 = shortest_sen1
 
