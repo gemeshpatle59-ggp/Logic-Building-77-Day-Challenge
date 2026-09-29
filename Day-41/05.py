@@ -6,14 +6,11 @@ def count_pos_neg_zero(nums):
     negative = 0
     zero = 0
 
-
     for i in nums:
         if i == 0:
             zero += 1
-
         elif i < 0:
             negative += 1
-
         else:
             positive += 1
 
