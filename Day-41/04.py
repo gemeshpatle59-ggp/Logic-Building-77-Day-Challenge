@@ -1,6 +1,5 @@
 # Count even and odd elements.
 
-
 def count_even_odd(nums):
 
     even = 0
