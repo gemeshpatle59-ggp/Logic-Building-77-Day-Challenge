@@ -4,7 +4,7 @@ def find_second_smallest_element(arr):
 
     smallest = float("inf")
     sec_smallest = float("inf")
-
+    
     for i in arr:
         if i < smallest:
             sec_smallest = smallest
