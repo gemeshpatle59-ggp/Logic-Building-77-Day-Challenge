@@ -11,8 +11,7 @@ def remove_duplicate(arr):
         else:
             hash_map[arr[i]] = 1
 
-    # for 
-    
+
     return arr
 
 print(remove_duplicate([2,4,5,7,5,5,4,2,2,8,9,3,9]))
