@@ -14,7 +14,17 @@ def find_ele(l1 , l2):
         if j not in hash_map:
             new_ele.append(j)
 
+    hash_map = {}
+
+    for k in l2:
+        hash_map[k] = 1
+
+
+    for l in l1:
+        if l not in hash_map:
+            new_ele.append(l)
+
 
     return new_ele
 
-print(find_ele([1,2,3,4] , [1,2,5,6]))
+print(find_ele([1,2,3,4,5] , [1,2,5,6]))
