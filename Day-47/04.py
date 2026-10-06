@@ -12,9 +12,8 @@ def find_pair_given_sum(nums , k):
                 pair.append(nums[j])
 
                 ans_pair.add(tuple(pair))
+                return list(ans_pair)
 
-
-    return list(ans_pair)
 
 
 print(find_pair_given_sum([2,3,5,6,7,1,4] , 7))
