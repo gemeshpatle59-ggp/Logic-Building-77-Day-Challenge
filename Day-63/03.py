@@ -9,16 +9,13 @@ def maximum_sum_row(matrix):
         temp = 0
         for num in row:
             temp += num
-            rows.append(num)
 
         if temp > maxm:
             maxm = temp
-
-        else:
-            row = []
+            rows = row
 
 
-    return row
+    return rows
 
 print(maximum_sum_row([[1,2,3],
                        [4,5,6],
