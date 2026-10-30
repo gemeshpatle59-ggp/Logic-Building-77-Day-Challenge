@@ -1,0 +1,1 @@
+# Trace a reverse-number algorithm for 1200 and explain the output.
