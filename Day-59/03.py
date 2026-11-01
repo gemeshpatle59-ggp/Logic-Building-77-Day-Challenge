@@ -66,6 +66,7 @@ def longest_subarray_window(nums, k):
 nums = [1, 2, 1, 2, 3]
 k = 2
 
+
 print(longest_subarray_window(nums, k))
 
 """
