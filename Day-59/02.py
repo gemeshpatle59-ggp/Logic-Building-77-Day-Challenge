@@ -18,6 +18,7 @@ def longest_subarray(nums, k):
             freq[nums[left]] -= 1
 
             if freq[nums[left]] == 0:
+                
                 del freq[nums[left]]
 
             left += 1
