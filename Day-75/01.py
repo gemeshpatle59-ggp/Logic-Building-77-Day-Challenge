@@ -68,6 +68,7 @@ def expense_analyzer():
 
     print("\nExpenses Above 300:")
 
+
     for category, amount in expenses.items():
         if amount > 300:
             print(category, ":", amount)
