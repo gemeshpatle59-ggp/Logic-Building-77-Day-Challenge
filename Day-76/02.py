@@ -108,3 +108,42 @@ def display_books():
 
             print("-----------------------------")
 
+# Main Menu
+while True:
+
+    print("\n===== LIBRARY MANAGEMENT SYSTEM =====")
+
+    print("1. Add Book")
+    print("2. Search Book")
+    print("3. Issue Book")
+    print("4. Return Book")
+    print("5. Display Books")
+    print("6. Exit")
+
+    try:
+        choice = int(input("\nEnter your choice: "))
+
+        if choice == 1:
+            add_book()
+
+        elif choice == 2:
+            search_book()
+
+        elif choice == 3:
+            issue_book()
+
+        elif choice == 4:
+            return_book()
+
+        elif choice == 5:
+            display_books()
+
+        elif choice == 6:
+            print("Thank you for using Library Management System!")
+            break
+
+        else:
+            print("Invalid choice! Try again.")
+
+    except ValueError:
+        print("Please enter a valid number!")
