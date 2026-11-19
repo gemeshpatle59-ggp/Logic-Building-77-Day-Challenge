@@ -29,3 +29,21 @@ def add_book():
         print("Book added successfully!")
 
 
+# 2. Search Book
+def search_book():
+
+    book_id = int(input("Enter Book ID: "))
+
+    if book_id in library:
+
+        print("\nBook Found!")
+        print("Book ID:", book_id)
+        print("Name:", library[book_id]["name"])
+        print("Author:", library[book_id]["author"])
+        print("Available:", library[book_id]["quantity"])
+        print("Issued:", library[book_id]["issued"])
+
+    else:
+        print("Book not found!")
+
+
