@@ -67,3 +67,24 @@ def issue_book():
     else:
         print("Book not found!")
 
+#  4. Return Book
+def return_book():
+
+    book_id = int(input("Enter Book ID: "))
+
+    if book_id in library:
+
+        if library[book_id]["issued"] > 0:
+
+            library[book_id]["issued"] -= 1
+            library[book_id]["quantity"] += 1
+
+            print("Book returned successfully!")
+
+        else:
+            print("No issued copy of this book to return!")
+
+    else:
+        print("Book not found!")
+
+
