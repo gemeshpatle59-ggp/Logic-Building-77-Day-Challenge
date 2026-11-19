@@ -88,3 +88,23 @@ def return_book():
         print("Book not found!")
 
 
+# 5. Display All Books
+def display_books():
+
+    if len(library) == 0:
+        print("Library is empty!")
+
+    else:
+
+        print("\n========== ALL BOOKS ==========")
+
+        for book_id, details in library.items():
+
+            print("\nBook ID:", book_id)
+            print("Name:", details["name"])
+            print("Author:", details["author"])
+            print("Available:", details["quantity"])
+            print("Issued:", details["issued"])
+
+            print("-----------------------------")
+
