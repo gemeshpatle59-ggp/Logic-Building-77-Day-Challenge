@@ -47,3 +47,23 @@ def search_book():
         print("Book not found!")
 
 
+# 3. Issue Book
+def issue_book():
+
+    book_id = int(input("Enter Book ID: "))
+
+    if book_id in library:
+
+        if library[book_id]["quantity"] > 0:
+
+            library[book_id]["quantity"] -= 1
+            library[book_id]["issued"] += 1
+
+            print("Book issued successfully!")
+
+        else:
+            print("Book is currently unavailable!")
+
+    else:
+        print("Book not found!")
+
