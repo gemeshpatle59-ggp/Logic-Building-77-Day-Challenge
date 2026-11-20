@@ -64,3 +64,10 @@ def Show_all_task():
         print(f"{i}.{task} : {status}")
     print("\n..")
 
+def show_pending_task():
+    print("\n====Pending Tasks====")
+    for i , (task, status) in enumerate ( To_do.items(), start=1):
+        if status == False:
+            print(f"{i}.{task} : {status}")
+    print("\n..")
+
