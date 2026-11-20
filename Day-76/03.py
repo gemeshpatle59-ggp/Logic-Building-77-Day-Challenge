@@ -95,6 +95,23 @@ def search_task(task):
         print("task is not in list..")
     
 
-                
+print("="*20)
+print("To-Do LIST".center(20))
+print("="*20)
+print("\n..")
+
+load_data()
 
 
+while True:
+
+    print("\n1. Add Task")
+    print("2. Remove Task")
+    print("3. Update Task")
+    print("4. Show All Tasks")
+    print("5. Show Pending Tasks")
+    print("6. Show Completed Tasks")
+    print("7. Search Task")
+    print("8. Exit\n")
+
+    
