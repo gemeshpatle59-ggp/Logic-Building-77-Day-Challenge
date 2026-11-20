@@ -39,3 +39,16 @@ def remove_task():
     except ValueError:
         print("check proper numbering of tasks..")      
 
+def Update_task():
+    try:
+        for i,(key,status) in enumerate (To_do.items(),start=1):
+            print(f"{i}.{key} : {status}")
+        n = int(input("enter task no. you want to update.: "))
+
+        task_list = list(To_do.keys())
+        tasks = task_list[n - 1]
+        To_do[tasks] = True
+        print("\n Task is completed..")
+
+    except ValueError:
+        print("check proper numbering of tasks")
