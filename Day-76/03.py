@@ -18,3 +18,7 @@ def load_data():
     else:
         save_data()
 
+def save_data():
+    with open("To_do.json","w") as file:
+        json.dump(To_do,file,indent=4)
+
