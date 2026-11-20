@@ -52,3 +52,15 @@ def Update_task():
 
     except ValueError:
         print("check proper numbering of tasks")
+
+def Show_all_task():
+    print("\n====All Tasks=====\n")    
+
+    if not To_do:
+        print("\nNo Tasks available.")
+        return
+    
+    for i ,(task, status) in enumerate (To_do.items() , start=1):
+        print(f"{i}.{task} : {status}")
+    print("\n..")
+
