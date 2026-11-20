@@ -22,3 +22,7 @@ def save_data():
     with open("To_do.json","w") as file:
         json.dump(To_do,file,indent=4)
 
+def Add_task(task):
+    To_do[task] = False
+    print("\nNew Task Is Added.")
+
