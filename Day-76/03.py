@@ -26,3 +26,16 @@ def Add_task(task):
     To_do[task] = False
     print("\nNew Task Is Added.")
 
+def remove_task():
+    try:
+        for i ,(key , status) in enumerate (To_do.items() , start=1):
+            print(f"{i}.{key} : {status}")
+        n = int(input("enter task no. you want to remove.: "))
+        task_list = list(To_do.keys())
+        tasks = task_list[n - 1]
+        To_do.pop(tasks) 
+        print(f"\ntask {tasks} is removed..") 
+
+    except ValueError:
+        print("check proper numbering of tasks..")      
+
