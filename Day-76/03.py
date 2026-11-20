@@ -80,3 +80,21 @@ def Completed_task():
             print(f"  status = {status}\n")
     print("\n..")
 
+def search_task(task):
+    tsk = ""
+    for tasks , status in To_do.items():
+            if tasks.lower().replace(" ","") == task.lower().replace(" ",""):
+                print("\n====Task Found====\n.")
+                print(f"task = {tasks}")
+                print(f"status = {status}")
+
+    for tasks , status in To_do.items():
+        keys = tasks.lower().replace(" ","")
+        tsk += keys
+    if task.lower().replace(" ","") not in tsk:
+        print("task is not in list..")
+    
+
+                
+
+
