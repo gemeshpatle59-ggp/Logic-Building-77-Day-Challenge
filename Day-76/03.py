@@ -71,3 +71,12 @@ def show_pending_task():
             print(f"{i}.{task} : {status}")
     print("\n..")
 
+
+def Completed_task():
+    print("\n====Completed Task====")
+    for i, (task, status) in enumerate (To_do.items(),start=1):
+        if status == True:
+            print(f"{i}.task = {task}")
+            print(f"  status = {status}\n")
+    print("\n..")
+
