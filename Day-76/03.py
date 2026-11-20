@@ -114,4 +114,49 @@ while True:
     print("7. Search Task")
     print("8. Exit\n")
 
+    try:
+        choice = int(input("Enter your Choice from ( 1 to 8 ) : "))
+
+        if choice == 1:
+            n = (input("Enter task to add..: "))
+            Add_task(n)
+            save_data()
+
+        elif choice == 2:
+            remove_task()    
+            save_data()
+
+        elif choice == 3:
     
+            Update_task()    
+            save_data()
+
+        elif choice == 4:
+            Show_all_task()
+
+        elif choice == 5:
+            show_pending_task()
+
+        elif choice == 6:
+            Completed_task()
+
+        elif choice == 7:
+            n = (input("ENter the task ..: "))
+            search_task(n)         
+
+        elif choice == 8:
+            print("======Thank you=====") 
+            print("----TO-DO list is closed---")   
+            break
+
+        else:
+            print("Something went wrong..")
+    except ValueError:
+        print("Something Went wrong..")
+
+
+
+
+
+
+
