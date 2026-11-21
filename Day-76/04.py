@@ -146,3 +146,74 @@ def complexity_analysis():
     print("Space Complexity: O(n)")
 
 
+# MAIN PROGRAM
+while True:
+
+    print("\n========== LOGIC CHALLENGE ==========")
+
+    print("1. String Analyzer")
+    print("2. List Analyzer")
+    print("3. Unique Number Finder")
+    print("4. Student Management")
+    print("5. Recursive Factorial")
+    print("6. Prime Number Checker")
+    print("7. Complexity Analysis")
+    print("8. Exit")
+
+    choice = input("\nEnter Your Choice: ")
+
+    if choice == "1":
+
+        text = input("Enter a Sentence: ")
+        string_analyzer(text)
+
+    elif choice == "2":
+
+        nums = list(map(int, input("Enter Numbers: ").split()))
+
+        if len(nums) > 0:
+            list_analyzer(nums)
+        else:
+            print("List Cannot Be Empty!")
+
+    elif choice == "3":
+
+        nums = list(map(int, input("Enter Numbers: ").split()))
+
+        unique_finder(nums)
+
+    elif choice == "4":
+
+        student_manager()
+
+    elif choice == "5":
+
+        n = int(input("Enter Number: "))
+
+        if n >= 0:
+            print("Factorial:", factorial(n))
+        else:
+            print("Negative Number Not Allowed!")
+
+    elif choice == "6":
+
+        n = int(input("Enter Number: "))
+
+        if prime_checker(n):
+            print(n, "is a Prime Number")
+        else:
+            print(n, "is Not a Prime Number")
+
+    elif choice == "7":
+
+        complexity_analysis()
+
+    elif choice == "8":
+
+        print("Thank You for Playing!")
+        break
+
+    else:
+        print("Invalid Choice! Try Again.")
+
+
