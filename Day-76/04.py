@@ -49,4 +49,12 @@ def list_analyzer(nums):
     print("Sum:", total)
     print("Average:", total / len(nums))
 
+# 3. Unique Number Finder Using Set
+def unique_finder(nums):
+
+    unique = set(nums)
+
+    print("\n--- UNIQUE NUMBERS ---")
+    print("Unique Numbers:", unique)
+    print("Total Unique Numbers:", len(unique))
 
