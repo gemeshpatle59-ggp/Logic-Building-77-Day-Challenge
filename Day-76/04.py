@@ -124,3 +124,25 @@ def prime_checker(n):
     return True
 
 
+# 7. Complexity Analysis
+def complexity_analysis():
+
+    print("\n--- COMPLEXITY ANALYSIS ---")
+
+    print("Linear Search:")
+    print("Time Complexity: O(n)")
+    print("Space Complexity: O(1)")
+
+    print("\nNested Loop:")
+    print("Time Complexity: O(n^2)")
+    print("Space Complexity: O(1)")
+
+    print("\nBinary Search:")
+    print("Time Complexity: O(log n)")
+    print("Space Complexity: O(1)")
+
+    print("\nRecursive Factorial:")
+    print("Time Complexity: O(n)")
+    print("Space Complexity: O(n)")
+
+
