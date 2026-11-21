@@ -58,3 +58,48 @@ def unique_finder(nums):
     print("Unique Numbers:", unique)
     print("Total Unique Numbers:", len(unique))
 
+# 4. Dictionary Based Student Management
+def student_manager():
+
+    students = {}
+
+    while True:
+
+        print("\n--- STUDENT MANAGEMENT ---")
+        print("1. Add Student")
+        print("2. Search Student")
+        print("3. Display Students")
+        print("4. Exit")
+
+        choice = input("Enter Choice: ")
+
+        if choice == "1":
+
+            name = input("Enter Name: ")
+            marks = int(input("Enter Marks: "))
+
+            students[name] = marks
+
+            print("Student Added Successfully!")
+
+        elif choice == "2":
+
+            name = input("Enter Name: ")
+
+            if name in students:
+                print("Marks:", students[name])
+            else:
+                print("Student Not Found!")
+
+        elif choice == "3":
+
+            for name, marks in students.items():
+                print(name, ":", marks)
+
+        elif choice == "4":
+            break
+
+        else:
+            print("Invalid Choice!")
+
+
